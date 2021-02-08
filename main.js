@@ -28,7 +28,6 @@ client.once('ready', () => {
   }, 3000);
 
   setTimeout(function() {
-		exports.connection_ = connection_;
 
 		autoPlay.autoPlay = true;
 		autoPlay.randomSong();
@@ -59,6 +58,10 @@ function joinCall(channel_) {
 		    console.log(" ");
 
 				connection_ = connection;
+                
+                this.connection_ = connection_;
+                exports.connection_ = this.connection_;
+                
     }).catch(e => { console.error(e); });
 }
 
@@ -71,6 +74,8 @@ var processing = false;
 exports.processing = processing;
 
 var hasStarted = false;
+
+exports.connection_ = connection_;
 
 //---------------------------------------------------------------
 client.on('message', async message => {
