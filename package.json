@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "3.5.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PerfMouse",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.6.4",
+    "fs": "0.0.1-security",
+    "local-storage": "^2.0.0",
+    "node-opus": "^0.3.3",
+    "opus": "0.0.0",
+    "return-deep-diff": "^0.2.9",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.4.5",
+    "ytdl-getinfo": "^1.1.0"
+  }
+}
