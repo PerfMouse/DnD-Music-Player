@@ -12,23 +12,23 @@ var data = { songList: [] };
 function randomSong() {
 		//read
 		if (currPlayList === "battle") {
-			let rawdata = fs.readFileSync('/home/liam/Desktop/discord bot/DnD Music V2/Playlists/DnD_BATTLE.json');
+			let rawdata = fs.readFileSync('./Playlists/DnD_BATTLE.json');
 			data = JSON.parse(rawdata);
 		}
 		else if (currPlayList === "travel") {
-			let rawdata = fs.readFileSync('/home/liam/Desktop/discord bot/DnD Music V2/Playlists/DnD_TRAVEL.json');
+			let rawdata = fs.readFileSync('./Playlists/DnD_TRAVEL.json');
 			data = JSON.parse(rawdata);
 		}
 		else if (currPlayList === "tavern") {
-			let rawdata = fs.readFileSync('/home/liam/Desktop/discord bot/DnD Music V2/Playlists/DnD_TAVERN.json');
+			let rawdata = fs.readFileSync('./Playlists/DnD_TAVERN.json');
 			data = JSON.parse(rawdata);
 		}
 		else if (currPlayList === "sad") {
-			let rawdata = fs.readFileSync('/home/liam/Desktop/discord bot/DnD Music V2/Playlists/DnD_SAD.json');
+			let rawdata = fs.readFileSync('./Playlists/DnD_SAD.json');
 			data = JSON.parse(rawdata);
 		}
 		else if (currPlayList === "epic") {
-			let rawdata = fs.readFileSync('/home/liam/Desktop/discord bot/DnD Music V2/Playlists/DnD_EPIC.json');
+			let rawdata = fs.readFileSync('./Playlists/DnD_EPIC.json');
 			data = JSON.parse(rawdata);
 		}
 
