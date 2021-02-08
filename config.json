@@ -1,7 +1,7 @@
 {
-"prefix": ";",
-"token": "",
-"textChannel": "",
-"voiceChannel": "",
-"botId":""
+"prefix": "PLACEHOLDER",
+"token": "PLACEHOLDER",
+"textChannel": "PLACEHOLDER",
+"voiceChannel": "PLACEHOLDER",
+"botId":"PLACEHOLDER"
 }
