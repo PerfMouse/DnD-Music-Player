@@ -38,7 +38,7 @@ You can add songs by adding `,"youtube-url"`
 Example:
 `{"songList":["url1","url2","url3"]}`
 
-# How to
+# Installation
 1) Creating a bot
 https://discordpy.readthedocs.io/en/latest/discord.html
 2) Inviting your bot
