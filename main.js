@@ -73,6 +73,9 @@ exports.isPlaying = isPlaying;
 var processing = false;
 exports.processing = processing;
 
+var looping = false;
+exports.looping = looping;
+
 var hasStarted = false;
 
 exports.connection_ = connection_;
