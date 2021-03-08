@@ -35,6 +35,11 @@ function play(song) {
       if (autoPlay.autoPlay == true) {
         autoPlay.randomSong();
       } else {
+	      if (main.looping === true) {
+		      execute(song.url);
+		      return;
+	      }
+	      
     		main.isPlaying = false;
       }
 		})
