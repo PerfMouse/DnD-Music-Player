@@ -9,7 +9,8 @@ module.exports = {
   play: play,
   skip: skip,
   stop: stop,
-  autoplay: autoplay
+  autoplay: autoplay,
+  loop: loop
 }
 
 function play(args) {
@@ -94,4 +95,14 @@ function autoplay() {
     autoPlay.randomSong();
 
   mainFunctions.sendMsg("Autoplaying","Now autoplaying!");
+}
+
+function loop() {
+   if (main.processing === true) {
+    mainFunctions.sendMsg("Busy processing","The bot is still processing previous command, please try again in a second");
+    return;
+  }
+  
+  main.looping = true;
+  mainFunctions.sendMsg("Looping","Now looping the current song!");
 }
